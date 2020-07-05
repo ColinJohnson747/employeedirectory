@@ -1,5 +1,5 @@
 import React from "react";
-
+import "../CSS/searchform.css";
 function Searchform(props) {
   return (
     <div>
@@ -11,13 +11,16 @@ function Searchform(props) {
           type="text"
           name="search"
           list="employee"
-          className="form-control col-6"
+          className="form-control col-8"
           placeholder="Search by Employee Name"
         />
         <button
           type="submit"
           value=""
-          className="btn btn-primary col-6"
+          className="btn btn-secondary col-2"
+          data-toggle="popover"
+          title="Search Error"
+          data-content="Please Enter a Name to Search"
           onClick={props.handleSearch}
         >
           Search

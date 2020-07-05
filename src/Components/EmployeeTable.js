@@ -1,18 +1,16 @@
 import React from "react";
-import Moment from "react-moment";
-
+import "../CSS/searchform.css";
 function EmployeeTable(props) {
   return (
     <table classname="tableEmployee">
-      <thread>
-        <tr>
-          <th></th>
-          <th onClick={props.sortByName}>Name</th>
-          <th>Phone</th>
-          <th>E-Mail</th>
-          <th>Date of Birth</th>
-        </tr>
-      </thread>
+      <tr>
+        <th>Profile Image</th>
+        <th className="name" onClick={props.sortByName}>
+          Name
+        </th>
+        <th className="col-5">Phone</th>
+        <th className="col-6">E-Mail</th>
+      </tr>
 
       <tbody className="">
         {props.results.map((result) => (
@@ -26,9 +24,6 @@ function EmployeeTable(props) {
             <td>{result.cell}</td>
             <td className="email">
               <a href={result.email}>{result.email}</a>
-            </td>
-            <td>
-              <Moment format="MM/DD/YYYY">{result.dob.date}</Moment>
             </td>
           </tr>
         ))}

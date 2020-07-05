@@ -1,13 +1,11 @@
 import React from "react";
-import Header from "./Components/Header";
-import Searchform from "./Components/Searchform";
+import PageContainer from "./Components/PageContainer";
 import "./App.css";
 
 function App() {
   return (
     <div className="App">
-      <Header />
-      <Searchform />
+      <PageContainer />
     </div>
   );
 }
