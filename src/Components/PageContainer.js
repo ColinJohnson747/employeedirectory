@@ -33,4 +33,27 @@ class PageContainer extends Component {
       filteredEmployees,
     });
   };
+
+  sortByName = () => {
+    const employeesFiltered = this.state.filteredEmployees;
+    if (this.state.order === "asc") {
+      const sortedEmployees = employeesFiltered.sort((a, b) =>
+        a.name.first > b.name.first ? 1 : -1
+      );
+      console.log(sortedEmployees);
+      this.setState({
+        filteredEmployees: sortedEmployees,
+        order: "desc",
+      });
+    } else {
+      const sortedEmployees = employeesFiltered.sort((a, b) =>
+        a.name.first > b.name.first ? -1 : 1
+      );
+      console.log(sortedEmployees);
+      this.setState({
+        filteredEmployees: sortedEmployees,
+        order: "asc",
+      });
+    }
+  };
 }
