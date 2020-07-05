@@ -1,5 +1,14 @@
-import API from "../utils/API";
-import React, { Component } from "react";
-import Searchformx from "./Searchform";
-import TableData from "./TableData";
-function Header() {}
+import React from "react";
+function Header() {
+  return (
+    <header>
+      <h1>Employee Directory</h1>
+      <p>
+        This directory will help you sort and manage your employees. Search an
+        Employee by name in the form below, or browse the list.
+      </p>
+    </header>
+  );
+}
+
+export default Header;

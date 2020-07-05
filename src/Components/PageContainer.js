@@ -1,7 +1,7 @@
 import API from "../utils/API";
 import React, { Component } from "react";
 import Searchform from "./Searchform";
-import TableData from "./TableData";
+import EmployeeTable from "./EmployeeTable";
 
 class PageContainer extends Component {
   state = {
