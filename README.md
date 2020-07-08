@@ -1,6 +1,6 @@
 # Employee Directory 
 
-This Employee Directory app is an application that will let you sort and find individuals in the database, and lets you search by name.
+This Employee Directory app is an application that will let you sort and find individuals in the database, and lets you search by name using Javascript and React.
 
 ## Installation
 
