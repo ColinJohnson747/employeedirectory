@@ -16,7 +16,7 @@ npm start`
 
 The app can be used by running the instillation commands, or can be found deployed [here](https://sleepy-bose-c6bae2.netlify.app/).
 
-The application has a list of example employees. It can be sorted by name alphabetically by clickin at the top of the name column, or you can search a name in the search bar to find a specific individual.
+The application has a list of example employees. It can be sorted by name alphabetically by clicking at the top of the name column, or you can search a name in the search bar to find a specific individual.
 
 
 
